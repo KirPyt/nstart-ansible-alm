@@ -10,8 +10,8 @@
   hosts: nexus_servers
   become: true
   roles:
-    - role: nexus-bootstrap
-      tags: boot
+    - nexus-bootstrap
+  tags: bootstrap
 
 - name: Configure Nexus (blob stores, repositories, realms, roles)
   hosts: nexus_servers
